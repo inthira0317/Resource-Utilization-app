@@ -34,6 +34,8 @@ _______________________________________________________
 ✔ Containerization (Docker)
 
 Docker packages the microservice and its dependencies into a lightweight, portable container.
+
+
 Benefits include:
 Fast deployment
 Lower overhead
@@ -43,6 +45,8 @@ Consistent runtime environment
 
 A Hyper-V VM runs a full operating system, offering complete isolation.
 Characteristics:
+
+
 Strong OS-level isolation
 Higher resource usage
 Slower compared to containers
@@ -57,22 +61,37 @@ Store/update exchange values
 
 ✅ Key Commands Used in the Project
 🔧 Maven Commands
+
+
 mvn clean install
+
 mvn package
+
 mvn dependency:tree
+
 mvn spring-boot:run
 
 ☕ Java Commands
+
+
 java -jar target/currencyconverter-0.0.1-SNAPSHOT.jar
+
+
 java -jar currencyconverter-0.0.1-SNAPSHOT.jar
 
 🐳 Docker Commands
+
+
 docker build -t currencyconverterapp .
+
 docker images
+
 docker run -d --name currencyconverter -p 8080:8080 currencyconverterapp
+
 docker stats
 
 🌐 JMeter Commands (inside Dockerfile CMD)
+
 jmeter -n -t /opt/jmeter/bin/100requests.jmx -l /opt/jmeter/results/results.csv
 
 
