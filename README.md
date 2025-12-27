@@ -296,6 +296,11 @@ Both environments were given the same application and the same number of user re
 
 For microservices (like your currency converter), **Docker is the better choice** because it performs faster and uses fewer resources even under heavy traffic.
 
+**FURTHER ENHANCEMENT**
 
+Future work can include integrating real-time monitoring dashboards using Prometheus and Grafana for visualizing CPU, memory, and I/O metrics.
+The system can be expanded into multiple microservices to study inter-service communication overhead.
+Auto-scaling, security features (HTTPS, authentication), and deployment on cloud platforms can be added for deeper performance comparison.
+Resource estimation can also be tested under Kubernetes to evaluate orchestration efficiency.
 
 
