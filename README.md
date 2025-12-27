@@ -1,7 +1,8 @@
 #Resource Utilization Assessment of Microservices in Docker and Virtual Machines
 📘 Project Overview
 
-This project analyzes how a microservices-based application behaves in two deployment environments:
+This project analyzes how a microservices-based application behaves in two deployment 
+environments:
 
 🐳 Docker Containers
 
