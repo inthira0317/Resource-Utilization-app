@@ -195,4 +195,107 @@ Monitored to check for leaks or excessive consumption.
 
 Observed in the virtual machine to analyze disk and network operations.
 
+Got you — here’s a **simple, clear, easy-to-understand explanation** of your **Docker vs Virtual Machine performance results**.
+No technical overload. Anyone (even non-IT people) can understand this version 👇
+
+---
+
+**📌 Performance Results: Docker vs Virtual Machine (Easy Explanation)**
+
+This project tested how a Currency Converter microservice performs when it runs inside:
+
+1. **Docker (Container)**
+2. **Virtual Machine (Hyper-V)**
+
+Both environments were given the same application and the same number of user requests (100 to 1000). The goal was to see **which one uses fewer system resources and works faster under load**.
+
+ **🔹 1. Docker Results — What Happened?**
+
+**✔ CPU Usage**
+
+* Docker’s CPU usage increased slowly as the load increased.
+* Even when **1000 users** were hitting the system, CPU usage was only **around 3.6%**.
+* This means Docker handled high load smoothly.
+
+**✔ Memory Usage**
+
+* Memory usage stayed stable.
+* No sudden jumps or memory leaks were observed.
+* Docker used only what it needed — nothing extra.
+
+**✔ Overall Behavior**
+
+* Docker was **fast**, **efficient**, and **stable**.
+* Performance increased gradually and predictably.
+* Perfect for microservices because it's lightweight.
+
+**👉 Conclusion for Docker**
+
+**Docker is highly efficient and handles heavy load easily with low resource consumption.**
+
+---
+
+**🔹 2. Virtual Machine (VM) Results — What Happened?**
+
+**✔ CPU Usage**
+
+* CPU usage was **higher** than Docker.
+* VMs require more processing power because they run a full operating system.
+* As load increased, CPU consumption increased faster.
+
+**✔ Memory Usage**
+
+* Memory usage was noticeably higher than Docker.
+* This is normal because VMs load a full OS (Windows 11) into RAM.
+
+**✔ I/O (Input/Output) Usage**
+
+* I/O was stable at lower loads.
+* At higher loads (1000 requests), I/O usage suddenly increased.
+* This happened because VMs take longer to adjust under heavy traffic.
+
+**✔ Overall Behavior**
+
+* VM worked fine, but it was slower and used more resources.
+* There was more overhead because the system has to simulate hardware.
+
+**👉 Conclusion for VM**
+
+**VMs are stable but consume more CPU, memory, and I/O, making them less efficient than Docker for microservices.**
+
+---
+
+**🔹 3. Easy Comparison (Human-Friendly Summary)**
+
+| Feature            | Docker              | Virtual Machine               |
+| ------------------ | ------------------- | ----------------------------- |
+| **Speed**          | Faster              | Slower                        |
+| **CPU Usage**      | Low                 | High                          |
+| **Memory Usage**   | Low                 | High                          |
+| **I/O Efficiency** | Smooth              | Fluctuates at high load       |
+| **Overhead**       | Very low            | Very high (full OS inside VM) |
+| **Best For**       | Microservices, APIs | Full OS apps, legacy systems  |
+
+---
+
+ **🔹 4. Final Simple Explanation**
+
+**Docker is like a small, fast car:**
+
+* Uses less fuel
+* Moves quickly
+* Responds instantly
+* Easy to scale
+
+**Virtual Machine is like a heavy truck:**
+
+* Strong, but slower
+* Needs more fuel
+* Takes time to speed up
+* Handles load but with more effort
+
+For microservices (like your currency converter), **Docker is the better choice** because it performs faster and uses fewer resources even under heavy traffic.
+
+
+
 
