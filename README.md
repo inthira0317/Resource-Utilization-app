@@ -62,7 +62,8 @@ Display supported currencies
 Store/update exchange values
 
 **Key Commands Used in the Project**
-🔧 **Maven Commands**
+
+🔧**Maven Commands**
 
 mvn clean install
 
